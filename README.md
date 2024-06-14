@@ -10,11 +10,11 @@ PITS模型主要包含以下两个创新点：
 
 1. **Patch独立重建任务**：不同于传统的依赖于其他patch进行预测的Masked Modeling（MM）任务，PITS通过自动编码每个patch，避免了捕捉patch依赖性，从而提高了模型效率和性能。
 
-   ![](框架图.png)
+   ![image](pits-mindspore - github/框架图.png)
 
 2. **互补对比学习**：通过互补随机遮掩策略生成正样本对，层次化地捕捉相邻时间序列信息，从而进一步提升表示学习的性能。
 
-​	![](Complement.png)
+​	![image](pits-mindspore - github/Complement.png)
 
 ## 3. 数据集介绍
 
@@ -85,7 +85,7 @@ Epilepsy数据集包含癫痫患者和健康人的脑电图数据，用于癫痫
 
 为高效率迁移模型及代码，此处使用鹏城实验室和华为联合开发的一款Mindspore生态适配工具——**MSadapter**。该工具能帮助用户高效使用昇腾算力，且在不改变**原有PyTorch用户**使用习惯的前提下，将代码快速迁移到Mindspore生态上。
 
-![](MSA_F.png)
+![image](pits-mindspore - github/MSA_F.png)
 
 ### 5.1 MSadapter安装
 
@@ -248,7 +248,7 @@ args = parser.parse_args()
 
 注：带`ms`后缀的为修改后的版本，例如
 
-![](微信图片_20240614212046.png)
+![image](pits-mindspore - github/微信图片_20240614212046.png)
 
 
 
@@ -360,8 +360,8 @@ ds_finteune = 'Epilepsy' # ['Epilepsy','FD_B','Gesture','EMG']
 
 ### 7.1 时间序列预测
 
-<img src="结果1.png" style="zoom: 50%;" />
+<img src="pits-mindspore - github/结果1.png" style="zoom: 50%;" />
 
 ### 7.2 时间序列分类
 
-![](结果2.png)
+![image](pits-mindspore - github/结果2.png)
