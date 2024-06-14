@@ -10,7 +10,7 @@ PITS模型主要包含以下两个创新点：
 
 1. **Patch独立重建任务**：不同于传统的依赖于其他patch进行预测的Masked Modeling（MM）任务，PITS通过自动编码每个patch，避免了捕捉patch依赖性，从而提高了模型效率和性能。
 
-   ![image](pits-mindspore - github/框架图.png)
+   ![image]([pits-mindspore - github/框架图.png](https://github.com/zxl-buaa/PITS-mindspore/blob/main/pits-mindspore%20-%20github/%E6%A1%86%E6%9E%B6%E5%9B%BE.png))
 
 2. **互补对比学习**：通过互补随机遮掩策略生成正样本对，层次化地捕捉相邻时间序列信息，从而进一步提升表示学习的性能。
 
